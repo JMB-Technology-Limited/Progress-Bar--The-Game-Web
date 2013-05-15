@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Progress Bar: The Game</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<link rel="canonical" href="http://www.progressbarthegame.co.uk"/>
+		<link rel="canonical" href="http://www.progressbarthegame.co.uk/play.html"/>
 		<link href="reset.css" rel="stylesheet" type="text/css" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
@@ -23,47 +23,29 @@
 					<h1>Progress Bar: The Game</h1>
 				</div>
 			</div>
-			<div id="quotesWrapper">
-				<ul id="quotes">
-					<li class="quoteWrapper">
-						<div class="quote">"Epic"</div>
-						<div class="citation">Kate Ho</div>
-					</li>
-					<li class="quoteWrapper">
-						<div class="quote">"Frankly Genius"</div>
-						<div class="citation"><a href="">Rohan</a></div>
-					</li>
-					<li class="quoteWrapper">
-						<div class="quote">"Zen Simplicity"</div>
-						<div class="citation">Chris Mannion</div>
-					</li>
-					<li class="quoteWrapper">
-						<div class="quote">"Intense gaming experience"</div>
-						<div class="citation"><a href="https://play.google.com/store/apps/details?id=uk.co.jarofgreen.progressbarthegame"><img src="5stars.png" alt="5 stars">Al Bennett</a></div>
-					</li>
-				</ul>
-			</div>
-			<div id="getthegameWrapper">
-				<ul id="getthegame">
-					<li class="android">
-						<a href="https://play.google.com/store/apps/details?id=uk.co.jarofgreen.progressbarthegame">
-							<img src="androidappstore.png" alt="Download from Google Play for Android">
-						</a>
-					</li>
-					<li class="online">
-						<a href="play.html">
-							<img src="playonline.png" alt="Play Online">
-						</a>
-					</li>
-				</ul>
+			<div id="playareaWrapper">
+				<div id="playarea">
+					<div id="progressbar">
+						<div id="progressbarFiller">
+						</div>
+					</div>
+					<div id="progressbarreading">
+					</div>
+					<div id="playButtonWrapper">
+						<input type="submit" onclick="playButtonClicked();return false;" id="playButton" value="Start Game">
+					</div>
+				</div>
 			</div>
 			<div id="footerWrapper">
 				<div id="footer">
-					<img src="iconFooter.png">
-					&copy; <a href="http://jmbtechnology.co.uk">JMB Technology 2013</a>
+					&copy; JMB Technology 2013
 				</div>
 			</div>
 		</div>
+		<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script -->
+		<script src="jquery-1.9.1.min.js"></script>
+		<script src="play.js"></script>
+
 		<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-40652278-1']);

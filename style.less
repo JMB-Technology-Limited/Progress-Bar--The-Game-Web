@@ -1,0 +1,112 @@
+/**
+ * @author James Baster <james@jarofgreen.co.uk>
+ * @copyright JMB Technology Limited
+ * @license Open Source under the 3-clause BSD License
+ * @url http://www.progressbarthegame.co.uk
+ * @url https://github.com/JMB-Technology-Limited/Progress-Bar--The-Game-Web
+**/
+
+html {
+	font-family: arial;
+}
+
+#page {
+
+
+
+}
+
+#headerWrapper {
+	background: #ccc;
+	#header {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 10px 0;
+		h1 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 20pt;
+		}
+	}
+}
+
+#quotesWrapper {
+	ul#quotes {
+		min-height: 100px;
+		max-width: 1000px;
+		margin: 0 auto;
+		li {
+			padding: 50px 0 20px 0;
+			.quote {
+				text-align: center;
+				font-weight: bold;
+				font-size: 14pt;
+			}
+			.citation {
+				text-align: center;
+				font-size: 12pt;
+				font-style: italic;
+				padding: 0 0 0 300px;
+				a {	
+					/** TODO use media queryies to remove this padding on small screens **/
+				}	
+			}
+		}
+	}
+}
+
+#getthegameWrapper {
+	ul#getthegame {
+		min-height: 100px;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 20px 0;
+		text-align: center;
+		li {
+			display: inline;
+			a {
+				text-decoration: none;
+			}
+		}
+		
+	}
+}
+
+#playareaWrapper {
+	#playarea {
+		padding: 50px 0;
+		#progressbar {
+			height: 20px;
+			padding: 5px 0;
+			display: block;
+			#progressbarFiller {
+				height: 20px;
+				background: #74AC23;
+				width: 0;
+			}
+		}
+		#progressbarreading {
+			padding: 5px 0;
+			text-align: center;
+		}
+		#playButtonWrapper {
+			padding: 50px 0;
+			text-align: right;
+			#playButton {	
+				min-width: 150px;
+				min-height: 50px;
+			}
+		}
+	}
+}
+
+
+#footerWrapper {
+	#footer {
+		max-width: 1000px;
+		margin: 0 auto;
+		text-align: right;
+		font-size: 10pt;
+		font-style: italic;
+	}
+}
