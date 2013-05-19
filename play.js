@@ -27,6 +27,7 @@ function playButtonClicked() {
 
 function startLevel() {
 	$('#playButton').hide();	
+	$('#message').hide();
 	currentPercent = 0;
 	timePerPercent = level * 75;
 	randomTimePerPercent = level * 30;
@@ -42,7 +43,7 @@ function addOnePerCent() {
 	drawProgressBar();
 	if (currentPercent >= 100) {
 		levelRunning = false;
-		alert(successMessages[getRandomInt(0,successMessages.length - 1)]);
+		showMessage(successMessages[getRandomInt(0,successMessages.length - 1)]);
 		var pb = $('#playButton');
 		pb.show();
 		pb.val('Next Level');
@@ -50,6 +51,13 @@ function addOnePerCent() {
 	} else {
 		setTimeout("addOnePerCent()",getTimeTillNextPerCent()); 
 	}
+}
+
+function showMessage(msg) {
+		var m = $('#message');
+		m.html(msg);
+		m.show();
+		setTimeout("$('#message').hide()",2000);
 }
 
 function drawProgressBar() {

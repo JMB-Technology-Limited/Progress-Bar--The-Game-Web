@@ -63,6 +63,17 @@ html {
   padding: 5px 0;
   text-align: center;
 }
+#playareaWrapper #playarea #messageWrapper {
+  text-align: center;
+  min-height: 60px;
+}
+#playareaWrapper #playarea #messageWrapper #message {
+  margin: 5px auto;
+  max-width: 200px;
+  background: #d4c676;
+  padding: 5px;
+  border: 2px solid #a09035;
+}
 #playareaWrapper #playarea #playButtonWrapper {
   padding: 50px 0;
   text-align: right;
