@@ -33,6 +33,15 @@ html {
   font-style: italic;
   padding: 0 0 0 300px;
 }
+#getthegameWrapper #calltoaction {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+  font-style: italic;
+}
 #getthegameWrapper ul#getthegame {
   min-height: 100px;
   max-width: 1000px;
