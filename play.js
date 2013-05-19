@@ -57,7 +57,7 @@ function showMessage(msg) {
 		var m = $('#message');
 		m.html(msg);
 		m.show();
-		setTimeout("$('#message').hide()",2000);
+		setTimeout("$('#message').hide()",4000);
 }
 
 function drawProgressBar() {
