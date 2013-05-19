@@ -43,7 +43,10 @@ function addOnePerCent() {
 	if (currentPercent >= 100) {
 		levelRunning = false;
 		alert(successMessages[getRandomInt(0,successMessages.length - 1)]);
-		$('#playButton').show().value('Next Level').focus();
+		var pb = $('#playButton');
+		pb.show();
+		pb.val('Next Level');
+		pb.focus();
 	} else {
 		setTimeout("addOnePerCent()",getTimeTillNextPerCent()); 
 	}
