@@ -6,6 +6,15 @@ var pausePercent = 0;
 var timePerPercent = 100;
 var randomTimePerPercent = 100;
 var progressBar;
+var successMessages = [
+	'Congratulations!',
+	'Well done!',
+	'Good work!',
+	'Well played!',
+	'Another level down!',
+	'Another progress bar defeated!',
+	'Great effort!',
+];
 
 function playButtonClicked() {
 	if (gameStarted) {
@@ -33,7 +42,7 @@ function addOnePerCent() {
 	drawProgressBar();
 	if (currentPercent >= 100) {
 		levelRunning = false;
-		alert('Well done!');
+		alert(successMessages[getRandomInt(0,successMessages.length - 1)]);
 		$('#playButton').show().value('Next Level').focus();
 	} else {
 		setTimeout("addOnePerCent()",getTimeTillNextPerCent()); 
