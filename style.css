@@ -14,6 +14,10 @@ html {
   font-weight: bold;
   font-size: 20pt;
 }
+#headerWrapper #header h1 a {
+  color: black;
+  text-decoration: none;
+}
 #quotesWrapper ul#quotes {
   color: #888;
   min-height: 100px;
